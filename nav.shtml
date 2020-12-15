@@ -1,0 +1,79 @@
+<div class="navbar">
+  <!-- <a href="./style_demo.html">Home</a> -->
+
+  <div class="dropdown">
+    <a
+      class="homebutton"
+      href="./style_demo.html"
+      style="
+        text-decoration: none;
+        background-color: #e0dacc;
+        padding: 40px;
+        text-align: left;
+        margin: -40px;
+      "
+    >
+      <button class="dropbtn">Home</button>
+    </a>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">
+      HTML
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./person.xml">Person.xml</a>
+      <a href="./list.html">Using List</a>
+      <a href="./day07.html"
+        >Using More Lists (Fundamental Principles of Interaction)</a
+      >
+
+      <a href="./table.html">Using Table</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">
+      CSS
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./lincon.html">Lincoln</a>
+      <a href="./layout_example.html">Golden Layout</a>
+      <a href="./document_assignment.html">Spelling Check</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">
+      Forms
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./form.html">Simple Form</a>
+      <a href="./formProcessing.html">Menu</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">
+      Javascript
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./day15.html">Fibonacci</a>
+      <a href="./day17.html">Javascript Exercise</a>
+      <a href="./canvas.html">Canvas Animation</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">
+      Other
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="./social_dilemma.html">Social Dilemma</a>
+      <a href="https://moodle.calvin.edu/course/view.php?id=51957"
+        >Go to Moodle</a
+      >
+    </div>
+  </div>
+</div>

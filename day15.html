@@ -1,0 +1,55 @@
+<!--Day 15
+ CS 100, Fall, 2014
+ Sinai Park(sp46)-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Day 15: Fibonacci Sequence</title>
+    <script src="sitebuilder.js"></script>
+    <link rel="stylesheet" href="site_builder_example.css" />
+
+</head>
+
+<script type="text/javascript">
+
+  function fib(first, second, countdown) {
+    console.log("I was called with " + first + ", " + second + ", " + countdown);
+    let sum = first + second;
+    let next = second + sum;
+    if (countdown > 0) {
+      fib(sum, next, countdown - 1);
+    }
+  }
+  //fib(1, 2, 3);
+  fib(1, 1, 4);
+
+
+  var first_number = prompt("Please enter the first number for our sequence calculation");
+  var second_number = prompt("Please enter the second number for our sequence calculation");
+
+  first_number = parseInt(first_number);
+  second_number = parseInt(second_number);
+
+  console.log(first_number);
+  console.log(second_number);
+
+  var previous_number = first_number;
+  var next_number = second_number;
+  var count = 8;
+
+  while (count > 0) {
+    count = count - 1;
+    var new_number = previous_number + next_number;
+    previous_number = next_number;
+    next_number = new_number;
+    console.log(next_number)
+  }
+</script>
+
+<body>
+
+</body>
+</head>

@@ -1,0 +1,118 @@
+* {
+	border: 1px solid saddlebrown;
+}
+
+body {
+	min-height: 100vh;
+	text-align: center;
+	/* centering website */
+	max-width: 1000px;
+	margin: 0 auto !important;
+	float: none !important;
+}
+
+.holygrail-body, body {
+	/* flex column */
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
+
+.header {
+	width: 100%;
+	height: 60px;
+	background: #FF8360;
+}
+
+.holygrail-body {
+	flex-direction: row;
+	-moz-transition: 0.4s;
+	-o-transition: 0.4s;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.holygrail-body .content {
+	background: #E8E288;
+	flex: 1 1 auto;
+	-moz-transition: 0.3s;
+	-o-transition: 0.4s;
+	-webkit-transition: 0.4s;
+	transition: 0.7s;
+}
+
+.holygrail-body .nav {
+	width: 100px;
+	list-style: none;
+	text-align: left;
+	background: #7DCE82;
+	margin: 0;
+	order: -1;
+	-moz-transition: 0.4s;
+	-o-transition: 0.8s;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+.holygrail-body .aside {
+	width: 100px;
+	background: #3CDBD3;
+	-moz-transition: 0.4s;
+	-o-transition: 0.9s;
+	-webkit-transition: 0.8s;
+	transition: 2s;
+}
+
+.footer {
+	width: 100%;
+	height: 60px;
+	background: #00FFF5;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+
+@media (max-width: 800px) {
+	.body {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.holygrail-body, body {
+		flex-direction: column;
+	}
+	.holygrail-body {
+		flex-direction: column;
+	}
+	.holygrail-body .nav {
+		order: 1;
+		flex: 1;
+		width: 100%;
+		-moz-transition: 0.4s;
+		-o-transition: 0.9s;
+		-webkit-transition: 0.8s;
+		transition: 2s;
+	}
+	.holygrail-body .content {
+		flex: 1;
+		order: 2;
+		min-height: 80vh;
+		-moz-transition: 0.4s;
+		-o-transition: 0.9s;
+		-webkit-transition: 0.8s;
+		transition: 2s;
+	}
+	.holygrail-body .aside {
+		flex: 1;
+		order: 3;
+		width: 100%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.holygrail-body .aside {
+		display: none;
+		-moz-transition: 0.4s;
+		-o-transition: 0.9s;
+		-webkit-transition: 0.8s;
+		transition: 0.7s;
+	}
+}

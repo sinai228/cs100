@@ -1,0 +1,24 @@
+<div class="aside">
+  <fieldset>
+    <legend>Personal Profile</legend>
+
+    <img
+      src="propic.png"
+      style="width: 140px; height: 180px; border: 10px solid #7d869c"
+    />
+    <h5>
+      Name: Sinai Park
+      <br /><br />
+      Date of Birth: 02/28/2001
+      <br /><br />
+      University: Calvin University
+      <br /><br />
+      Major: Computer Science (BS)
+      <br /><br />
+      Nationality: Korean
+      <br /><br />
+      Hobbies: Reading, Taking pictures, Organizing, Watching Movies, Hanging
+      out with friends, Going to cafes<br /><br />
+    </h5>
+  </fieldset>
+</div>

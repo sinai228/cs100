@@ -1,0 +1,98 @@
+<!--Day 22
+ CS 100, Fall, 2020
+ Sinai Park(sp46)
+ Cora Boyoung Jung(bj29)
+ Daniel Jung(cj37)-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Day 22</title>
+    <script src="sitebuilder.js"></script>
+    <link rel="stylesheet" href="site_builder_example.css" />
+
+    <style>
+      #mycanvas {
+        border: 2mm solid black;
+        border-radius: 1em;
+      }
+    </style>
+  </head>
+
+  <body onload="draw();">
+    <canvas id="mycanvas" width="500px" height="300px"></canvas>
+
+    <script type="text/javascript">
+      console.log("hello world");
+
+      var frame_number = 0;
+
+      function draw() {
+        frame_number = frame_number + 1;
+        console.log("now drawing frame: " + frame_number);
+        setTimeout(draw, 20);
+
+        var canvas = document.getElementById("mycanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, 500, 300);
+
+        ctx.strokeStyle = "pink";
+        ctx.lineCap = "round";
+        ctx.lineWidth = 15;
+        ctx.beginPath();
+        ctx.arc(250, 150, 50, frame_number / 20, frame_number / 20 + 2);
+        ctx.stroke();
+
+        ctx.strokeStyle = "#00ffff ";
+        ctx.beginPath();
+        ctx.arc(
+          250,
+          150,
+          30,
+          (-1 * frame_number) / 30,
+          (-1 * frame_number) / 30 + 4
+        );
+        ctx.stroke();
+
+        ctx.strokeStyle = "#A3D9FF ";
+        ctx.lineWidth = 10;
+        ctx.beginPath();
+        ctx.arc(250, 150, 70, frame_number / 80, frame_number / 20 + 6);
+        ctx.stroke();
+
+        ctx.strokeStyle = "#9F9FAD ";
+        ctx.lineWidth = 15;
+        ctx.beginPath();
+        ctx.arc(250, 150, 90, frame_number / 30, frame_number / 30 + 4);
+        ctx.stroke();
+
+        ctx.lineWidth = 0.7;
+        ctx.strokeStyle = "#3A506B";
+        ctx.moveTo(100, 0);
+        ctx.font = "30px Arial";
+        ctx.strokeText("Day 22: Animating Camera", 10, 280);
+
+        ctx.strokeStyle = "#D5BBB1";
+        ctx.beginPath();
+
+        ctx.lineWidth = 20;
+        ctx.beginPath();
+        ctx.lineTo(100, 60);
+        ctx.stroke();
+
+        ctx.lineWidth = 30;
+        ctx.beginPath();
+        ctx.lineTo(50, 60);
+        ctx.stroke();
+
+        var gradient = ctx.createLinearGradient(0, 0, 200, 0);
+        gradient.addColorStop("0", " blue");
+        gradient.addColorStop("1.0", "red");
+        ctx.fillStyle = gradient;
+        ctx.font = "30px Verdana";
+        ctx.fillText("Frame: " + frame_number, 10, 40);
+      }
+    </script>
+  </body>
+</html>

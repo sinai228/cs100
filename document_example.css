@@ -1,0 +1,68 @@
+body {
+  width: 800px;
+  margin: auto;
+}
+
+div{
+  display: inline-block;
+}
+.error {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+ }
+.suggestion {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+div .spelling  {
+  text-decoration-color: red;
+}
+
+div .grammar  {
+  text-decoration-color: blue;
+}
+
+.blockquote {
+  background-color: lightgray;
+  border-radius: 5px;
+  text-decoration-line: none;
+  padding: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.blockquote .blockquote {
+  margin:0px;
+  padding:0px;
+}
+
+.ignore{
+  display: none;
+}
+
+div.heading {
+  font-weight: bold;
+  font-size: 3em;
+}
+div > div > .heading{
+    font-size: 1em;
+    display: block;
+}
+
+
+
+
+
+/* Underline all errors with that wavy underline all the cool word processors are using these days
+Underline all suggestions with straight underlines
+Make spelling underlines red
+Make grammar underlines blue
+Do not underline things in blockquotes.
+Put a rounded (5px radius)lightgray background around  blockquotes
+Give blockquotes 10px of padding
+put a 20px margin on the left and right of blockquotes
+blockquotes within blockquotes should not alter the text, nested blockquotes should have no effect.
+Ensure that other tags do not interrupt the flow of the text
+Do not display tags with the ignore class
+Headings in the main document need to be bold and have a font size */

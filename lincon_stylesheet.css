@@ -1,0 +1,33 @@
+/* put your styles for lincon.html here, and DO NOT MODIFY lincon.html */
+
+
+ /* Lab: Basic CSS
+ CS 100, Fall, 2014
+ Sinai Park(sp46)
+
+ This exercise asks you to format a test HTML page. */
+
+body {
+  background-color: salmon;
+}
+h1 {
+  font-family: sans-serif;
+}
+p{
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+img {
+  border: 5px solid #000;
+  width: 12em;
+  height: 12em;
+}
+div {
+  color: blue;
+  font-style: italic;
+}
+span {
+  font-family: "Courier New", Courier, monospace;
+}
+a {
+  color: red;
+}

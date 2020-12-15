@@ -1,0 +1,192 @@
+<!-- Lab: Tables
+CS 100, Fall, 2014
+Sinai Park(sp46)
+
+This exercise asks you to create a webpage that demonstrates a table. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab: Tables</title>
+      <script src="sitebuilder.js"></script>
+    <link rel="stylesheet" href="site_builder_example.css" />
+
+</head>
+
+<body>
+  <!-- creates a table -->
+  <table>
+    <tr>
+      <!-- enters the table header for the weekdays -->
+      <th></th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+    <tr>
+      <!-- schedule begins at 8am with waking up -->
+      <th>08:00</th>
+      <td colspan="7" style="text-align:center">Wake Up</td>
+    </tr>
+    <tr>
+      <!-- schedule at 8:30m with getting ready -->
+      <th>08:30</th>
+      <td colspan="7" rowspan="2" style="text-align:center">Get ready (breakfast, work, etc)</td>
+    </tr>
+    <tr>
+      <th>09:00</th>
+    </tr>
+    <tr>
+      <!-- schedule 9:30am with reading books and service on sunday-->
+      <th>09:30</th>
+      <td colspan="6" rowspan="3">Read Books</td>
+      <td rowspan="2">Service</td>
+    </tr>
+    <tr>
+      <th>10:00</th>
+    </tr>
+    <tr>
+      <!-- sometimes clean room in the morning -->
+      <th>10:30</th>
+      <td colspan="2" rowspan="3">Clean</td>
+    </tr>
+    <tr>
+      <th>11:00</th>
+      <!-- go timetraveling (if i can) eat, listen to music, shower, during the course of the week-->
+      <td rowspan="9">Go time traveling</td>
+      <td rowspan="4">Eat snacks </td>
+      <td rowspan="5">Listen to music </td>
+      <td rowspan="2" colspan="3">Take a shower</td>
+    </tr>
+    <tr>
+      <th>11:30</th>
+    </tr>
+    <tr>
+      <!-- eat lunch everyday at noon -->
+      <th>12:00</th>
+      <td colspan="7" style="text-align:center" rowspan="2">Lunch</td>
+    </tr>
+    <tr>
+      <!-- listen to lectures once a week (i wish) -->
+      <th>12:30</th>
+      <td></td>
+      <td rowspan="3">Listen to a lecture</td>
+    </tr>
+    <tr>
+      <th>13:00</th>
+    </tr>
+    <tr>
+      <!-- get some unending housechores done -->
+      <th>13:30</th>
+      <td colspan="4" rowspan="2">Housechores</td>
+    </tr>
+    <tr>
+      <th>14:00</th>
+    </tr>
+    <tr>
+      <!-- watch a movie, get some rest, and join meetings -->
+      <th>14:30</th>
+      <td></td>
+      <td rowspan="4">Watch a movie</td>
+      <td>Alone Time</td>
+      <td></td>
+      <td rowspan="2">Virtual Meeting</td>
+    </tr>
+    <tr>
+      <th>15:00</th>
+    </tr>
+    <tr>
+      <!-- Do the things I like, decorate, read, draw, but still gotta join meetings -->
+      <th>15:30</th>
+      <td rowspan="3">Self-care</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td rowspan="2">Virtual Meeting</td>
+    </tr>
+    <tr>
+      <th>16:00</th>
+    </tr>
+    <tr>
+      <!-- exercise at least twice a week before dinner -->
+      <th>16:30</th>
+      <td rowspan="3">Exercise</td>
+      <td></td>
+      <td></td>
+      <td rowspan="3">Exercise</td>
+    </tr>
+    <tr>
+      <!-- go out to a cafe, take pictures, or do both -->
+      <th>17:00</th>
+      <td></td>
+      <td></td>
+      <td rowspan="2">Take Pictures</td>
+      <td rowspan="5">Go out to a cafe</td>
+    </tr>
+    <tr>
+      <!-- taking pictures mean editing them as well  -->
+      <th>17:30</th>
+      <td></td>
+      <td rowspan="3">Edit Pictures/Videos </td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>18:00</th>
+    </tr>
+    <tr>
+      <!-- sometimes go out to eat, other times, prepare dinner -->
+      <th>18:30</th>
+      <td style="text-align:center" colspan="7">Prepare dinner</span></td>
+    </tr>
+    <tr>
+      <!-- eat dinner! *very important -->
+      <th>19:00</th>
+      <td style="text-align:center" colspan="7" rowspan="2">Eat Dinner</td>
+    </tr>
+    <tr>
+      <th>19:30</th>
+    </tr>
+    <tr>
+      <!-- focus the most during nighttime, watching youtube, listening to lectures, videos, etc -->
+      <th>20:00</th>
+      <td rowspan="2">Listen to Lecture</td>
+      <td></td>
+      <td rowspan="4">Watch Youtube</td>
+      <td></td>
+      <td rowspan="2">Listen to Lecture</td>
+      <td></td>
+      <td rowspan="3">Organize and Clean</td>
+    </tr>
+    <tr>
+      <!-- college means assignments, and a lot of that too:) -->
+      <th>20:30</th>
+      <td colspan="7" rowspan="5" style="text-align:center">Work on Assignments</td>
+    </tr>
+    <tr>
+      <th>21:00</th>
+    </tr>
+    <tr>
+      <th>21:30</th>
+    </tr>
+    <tr>
+      <th>22:00</th>
+    </tr>
+    <tr>
+      <th>21:30</th>
+    </tr>
+    <tr>
+      <!-- get ready to go to bed (writing diary is IDEAL) -->
+      <th>22:00</th>
+      <td colspan="7" style="text-align:center">Write diary (go to bed)</td>
+    </tr>
+  </table>
+</body>
+
+</html>

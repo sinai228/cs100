@@ -1,0 +1,71 @@
+<!--Day 09
+ CS 100, Fall, 2014
+ Sinai Park(sp46)-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Day 09: Form Input Exercise</title>
+    <script src="sitebuilder.js"></script>
+    <link rel="stylesheet" href="site_builder_example.css" />
+  </head>
+
+  <body>
+    <h1>The form action attribute</h1>
+
+    <form action="https://www.w3schools.com/action_page.php">
+      <fieldset>
+        <legend>A little bit about you:</legend>
+        <br />
+
+        <label for="fullname">Full name:</label><br />
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="John Doe.."
+          required
+        /><br /><br />
+        <label for="birthday">Birthday:</label><br />
+        <input
+          type="date"
+          id="birthday"
+          name="birthday"
+          max="10/10/2020"
+        /><br /><br />
+        <label for="email">E-mail:</label><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="abc123@gmail.com"
+        /><br /><br />
+        <label for="age">Age:</label><br />
+        <input
+          type="number"
+          id="age"
+          placeholder="19"
+          min="0"
+          max="120"
+        /><br /><br />
+        <label for="favour">My Favorite Icecream Flavour:</label><br />
+
+        <datalist id="myFavoriteIcecreamFlavour">
+          <option value="Chocolate"></option>
+          <option value="Peach"></option>
+          <option value="Mint"></option>
+          <option value="Strawberry"></option>
+          <option value="Vanilla"></option>
+        </datalist>
+
+        <input
+          type="text"
+          id="age"
+          placeholder="Chocolate-Vanilla"
+          list="myFavoriteIcecreamFlavour"
+        /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
